@@ -78,8 +78,13 @@ public class Book {
         this.category = category;
     }
     
-    public String  toString (){
-        return "Libro";
+   public String toString() {
+        return String.format("Libro: titulo=%s, autor=%s, paginas=%s, publicacion=%s, editorial=%s, categoria=%s",
+                getTittle(), getAuthor(),
+                getPages().toString(), getPublishDate().toString(),
+                getEditor(), getCategory());
+        // return "Libro[ titulo: " + title + ", autor: " + author + ", paginas: " +
+        // pages + "]";
     }
     }
 

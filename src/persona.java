@@ -47,12 +47,8 @@ public class persona {
 
     @Override
     public String toString() {
-        return "persona{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", email='" + email + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                '}';
+        return  String.format("Person: fullName=%s %s, email=%s, phone=%s",
+                firstName, lastName, email, phoneNumber);
       
     }
 
